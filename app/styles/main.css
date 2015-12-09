@@ -1,0 +1,78 @@
+/*  Syntax Quick Reference -------------------------- column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter) span($ratio: 1, $offset: 0) shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter) unshift() edit() center($max_width: 1410px, $pad: 0) stack($pad: 0, $align: false) unstack() align($direction: both) cf()
+*/
+/** Grid settings. All values are defaults and can therefore be easily overidden. */
+/** List functions courtesy of the wonderful folks at Team Sass. Check out their awesome grid: Singularity. */
+/** Get  percentage from a given ratio. @param {number} [$ratio=1] - The column ratio of the element. @returns {number} - The percentage value. */
+/** Work out the column widths based on the ratio and gutter sizes. @param {number} [$ratios=1] - The column ratio of the element. @param {number} [$gutter=$jeet-gutter] - The gutter for the column. @returns {list} $width $gutter - A list containing the with and gutter for the element. */
+/** Get the set layout direction for the project. @returns {string} $direction - The layout direction. */
+/** Replace a specified list value with a new value (uses built in set-nth() if available) @param {list} $list - The list of values you want to alter. @param {number} $index - The index of the list item you want to replace. @param {*} $value - The value you want to replace $index with. @returns {list} $list - The list with the value replaced or removed. @warn if an invalid index is supplied. */
+/** Reverse a list (progressively enhanced for Sass 3.3) @param {list} $list - The list of values you want to reverse. @returns {list} $result - The reversed list. */
+/** Get the opposite direction to a given value. @param {string} $dir - The direction you want the opposite of. @returns {string} - The opposite direction to $dir. @warn if an incorrect string is provided. */
+/** Style an element as a column with a gutter. @param {number} [$ratios=1] - A width relative to its container as a fraction. @param {number} [$offset=0] - A offset specified as a fraction (see $ratios). @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns. @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one. @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width. */
+/** An alias for the column mixin. @param [$args...] - All arguments get passed through to column(). */
+/** Get the width of a column and nothing else. @param {number} [$ratios=1] - A width relative to its container as a fraction. @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width. */
+/** Get the gutter size of a column and nothing else. @param {number} [ratios=1] - A width relative to its container as a fraction. @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width. */
+/** An alias for the column-width function. @param [$args...] - All arguments get passed through to column(). */
+/** An alias for the column-gutter function. @param [$args...] - All arguments get passed through to column(). */
+/** Style an element as a column without any gutters for a seamless row. @param {number} [$ratios=1] - A width relative to its container as a fraction. @param {number} [$offset=0] - A offset specified as a fraction (see $ratios). @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns. @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one. */
+/** Reorder columns without altering the HTML. @param {number} [$ratios=0] - Specify how far along you want the element to move. @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not. @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width. */
+/** Reset an element that has had shift() applied to it. */
+/** View the grid and its layers for easy debugging. @param {string} [$color=black] - The background tint applied. @param {boolean} [$important=false] - Whether to apply the style as !important. */
+/** Alias for edit(). */
+/** Horizontally center an element. @param {number} [$max-width=1410px] - The max width the element can be. @param {number} [$pad=0] - Specify the element's left and right padding. */
+/** Uncenter an element. */
+/** Stack an element so that nothing is either side of it. @param {number} [$pad=0] - Specify the element's left and right padding. @param {boolean/string} [$align=false] - Specify the text align for the element. */
+/** Unstack an element. */
+/** Center an element on either or both axes. @requires A parent container with relative positioning. @param {string} [$direction=both] - Specify which axes to center the element on. */
+/** Apply a clearfix to an element. */
+html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
+html*, body* { box-sizing: border-box; -webkit-text-size-adjust: none; outline: none; position: relative; resize: none; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+body { background: #595959; background-repeat: no-repeat; background-attachment: fixed; color: #000000; font: normal 18px/29px "Helvetica Neue", "Arial", sans-serif; position: relative; }
+
+.heading-1 { font-size: 24px; font-weight: 400; margin-bottom: 16px; }
+
+.heading-3 { font-weight: 400; }
+
+.link { color: #ffffff; text-decoration: none; border-bottom: 2px solid #ffffff; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.link:hover, .link:focus { color: #dbcec0; border-color: #dbcec0; -webkit-transition: all 0.15s ease; transition: all 0.15s ease; }
+
+.button { border: 2px solid rgba(255, 255, 255, 0.15); color: #ffffff; border-radius: 4px; padding: 0 16px; font-weight: 500; height: 46px; line-height: 44px; display: inline-block; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; text-decoration: none; }
+.button:hover, .button:focus { border-color: rgba(219, 206, 192, 0.15); color: #dbcec0; cursor: pointer; -webkit-transition: all 0.15s ease; transition: all 0.15s ease; }
+
+.hr { margin: 0 0 12px; background: #595959; border: 0; height: 1px; display: block; }
+
+.v-home__content { *zoom: 1; width: auto; max-width: 960px; float: none; display: block; margin-right: auto; margin-left: auto; padding-left: 0; padding-right: 0; *zoom: 1; white-space: nowrap; padding: 40px; margin-bottom: 120px; position: relative; }
+.v-home__content:before, .v-home__content:after { content: ''; display: table; }
+.v-home__content:after { clear: both; }
+.v-home__content:before, .v-home__content:after { content: ''; display: table; }
+.v-home__content:after { clear: both; }
+.v-home__rotation-object { border-radius: 12px; display: inline-block; position: absolute; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.fake { pointer-events: none; }
+
+.hidden { display: none; }
+
+.transperent { visibility: hidden; }
+
+.locked { opacity: 0.38; pointer-events: none; }
+
+.success { color: #4cd964; }
+
+.error { color: #ff3b30; }
+
+@media print { *, *:before, *:after { color: #000 !important; background: transparent !important; box-shadow: none !important; text-shadow: none !important; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  pre, blockquote { border: 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); page-break-inside: avoid; }
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  a[href^='#']:after, a[href^='javascript:']:after { content: ''; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; } }
