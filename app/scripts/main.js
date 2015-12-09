@@ -1,25 +1,28 @@
-function init() {
 
-  // глобальные
-  var renderer, scene, camera, spotLight;
+function webglApp() {
 
-  // сцена
+  "use strict";
+
+  //// Переменные
+  // Сцена
+  var renderer, scene;
   var rotationObject; // DOM
-
   var sceneWidth = window.innerWidth / 3;
   var sceneHeight = window.innerHeight / 2;
-
+  // Освещение
+  var light, spotLight;
   var shadowMapWidth = 2048;
   var shadowMapheigh = shadowMapWidth;
+  // Камера
+  var camera;
 
   // объекты
-  var cube, geometry, material;
+  var cube, cubeGeometry, cubeMaterial, texture;
+  var plane, planeGeometry, planeMaterial;
 
 
 
-
-
-  var scene = function () {
+  var engine = function () {
 
     // Сцена
     renderer = new THREE.WebGLRenderer({
@@ -56,47 +59,35 @@ function init() {
 
 
     // Камера
+    var cameraZoom = 10;
     camera = new THREE.OrthographicCamera(
-      sceneWidth / - 10, sceneWidth / 10, sceneHeight / 10, sceneHeight / - 10, 1, 1000
+      sceneWidth / - cameraZoom,
+      sceneWidth / cameraZoom,
+      sceneHeight / cameraZoom,
+      sceneHeight / - cameraZoom,
+      1, 1000
     );
     camera.position.x = -30;
     camera.position.y = 40;
     camera.position.z = 30;
     camera.lookAt(scene.position);
     scene.add(camera);
+  };
 
 
 
-    // Плоскость
-    var planeGeometry = new THREE.PlaneGeometry(300,300,1,1);
-    var planeMaterial = new THREE.MeshBasicMaterial({
-      color: 0x595959
-    });
-    var plane = new THREE.Mesh(planeGeometry,planeMaterial);
-    plane.receiveShadow = true;
-    plane.rotation.x=-0.5*Math.PI;
-    plane.position.x = 0;
-    plane.position.y = -15; // опустить горизонт ниже кубика
-    plane.position.z = 0;
-    scene.add(plane);
-
-
+  var objects = function () {
 
     // Куб
     cubeGeometry = new THREE.BoxGeometry(15, 15, 15);
-    cubeMaterial = new THREE.MeshLambertMaterial({
-      wireframe: false,
-      shading: THREE.SmoothShading,
-      color: 0x9933ff
-    });
-
-    var texture = THREE.ImageUtils.loadTexture('../images/home/pattern.png');
-    var cubeMaterial = new THREE.MeshPhongMaterial({
+    texture = THREE.ImageUtils.loadTexture('../images/home/pattern.png');
+    cubeMaterial = new THREE.MeshPhongMaterial({
       color: 0xf2f2f2,
-      specular: 0x111111,
+      wireframe: false,
       map: texture,
       normalMap: texture,
       specular: texture,
+      shading: THREE.SmoothShading,
       reflectivity: 1,
       shininess: 300,
       metal: false
@@ -107,7 +98,22 @@ function init() {
     cube.position.z = 0;
     cube.position.z = 0;
     scene.add(cube);
-  }
+
+
+
+    // Плоскость
+    planeGeometry = new THREE.PlaneGeometry(300,300,1,1);
+    planeMaterial = new THREE.MeshBasicMaterial({
+      color: 0x595959
+    });
+    plane = new THREE.Mesh(planeGeometry,planeMaterial);
+    plane.receiveShadow = true;
+    plane.rotation.x=-0.5*Math.PI;
+    plane.position.x = 0;
+    plane.position.y = -15; // опустить горизонт ниже кубика
+    plane.position.z = 0;
+    scene.add(plane);
+  };
 
 
 
@@ -122,10 +128,9 @@ function init() {
 
 
 
-
-
-  scene();
+  engine();
+  objects();
   action();
 }
 
-init();
+window.onload = webglApp;
