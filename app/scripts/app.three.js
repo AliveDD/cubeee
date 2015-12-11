@@ -17,7 +17,7 @@ function webglApp() {
   var camera;
 
   // объекты
-  var cube, cubeGeometry, cubeMaterial, texture;
+  var cube, cubeGeometry, cubeMaterial, texture, normalMap;
   var plane, planeGeometry, planeMaterial;
 
 
@@ -80,17 +80,16 @@ function webglApp() {
 
     // Куб
     cubeGeometry = new THREE.BoxGeometry(15, 15, 15);
-    texture = THREE.ImageUtils.loadTexture('../images/home/pattern.png');
+    texture = THREE.ImageUtils.loadTexture('../images/home/texture.jpg');
+    normalMap = THREE.ImageUtils.loadTexture('../images/home/normal.jpg');
     cubeMaterial = new THREE.MeshPhongMaterial({
-      color: 0xf2f2f2,
+      color: 0xc6e4ec,
       wireframe: false,
       map: texture,
-      normalMap: texture,
-      specular: texture,
-      shading: THREE.SmoothShading,
-      reflectivity: 1,
-      shininess: 300,
-      metal: false
+      normalMap: normalMap,
+      shininess: 5,
+      specular: 0xffffff,
+      metal: true
     });
     cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     cube.castShadow = true;
