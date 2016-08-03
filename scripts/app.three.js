@@ -99,7 +99,7 @@ function webglApp() {
       metal: true
     });
     cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    cube.castShadow = true;
+    // cube.castShadow = true;
     cube.position.y = 0;
     cube.position.z = 0;
     cube.position.z = 0;
