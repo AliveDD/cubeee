@@ -1,0 +1,956 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"idn",
+				"indexOf"
+			],
+			[
+				"eleme",
+				"formElement"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
+				"ind",
+				"indexOf"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"calen",
+				"calendarOption"
+			],
+			[
+				"firs",
+				"first-child"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"eac",
+				"each	$.each()"
+			],
+			[
+				"api",
+				"apiObj"
+			],
+			[
+				"k",
+				"keyup	.keyup()"
+			],
+			[
+				"filter",
+				"filter	.filter()"
+			],
+			[
+				"jq",
+				"jquery-3.0.0.min.js"
+			],
+			[
+				"el",
+				"formElement"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"rese",
+				"reserve"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"log",
+				"console.log()"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "save",
+		"selected_items":
+		[
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"json",
+				"Set Syntax: JSON (Javascript Next)"
+			],
+			[
+				"typo",
+				"Typograph text/file"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"sche",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"scheme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"styl",
+				"Set Syntax: Stylus"
+			],
+			[
+				"brows",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"theme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"cl",
+				"Project: Close"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"brow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"borws",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"bro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"brp",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"ANF: New File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pref user",
+				"Preferences: Settings - User"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"log",
+				"Snippet: console.log"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"use",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"eid",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Emmet: Remove Tag"
+			],
+			[
+				"edi",
+				"Project: Edit Project"
+			],
+			[
+				"st",
+				"Set Syntax: Stylus"
+			],
+			[
+				"browser",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown ",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"selector",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"User",
+				"Preferences: Settings - User"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/e.balashov/Git/cubeee"
+	],
+	"file_history":
+	[
+		"/Users/e.balashov/Git/cubeee/README.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/reset.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/vendor/selectric.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/base.styl",
+		"/Users/e.balashov/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/e.balashov/Desktop/!!!.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.common.styl",
+		"/Users/e.balashov/Desktop/DADDY",
+		"/Users/e.balashov/Desktop/rest.html",
+		"/Users/e.balashov/Desktop/rest.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/rest.json",
+		"/Users/e.balashov/Dropbox/design/daysoftype/events.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/index.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/app.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/webpack.config.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/readme.md",
+		"/Users/e.balashov/Git/js-education/js.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/index.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/common_popup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/api_popup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/vendor/js.cookie.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/jquery.inputmask.bundle.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/SmartReserveWebFrontEnd.sublime-project",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/static/main.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/vendor/pickmeup.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/static/main.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/main.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/vendor/jquery.inputmask.bundle.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/index.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/popup/reservation.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/jquery.ui.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/vendor/fastclick.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/pickmeup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/jquery.selectric.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/common/js/jquery.custom-scrollbar.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/.gitignore",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/static/js/popup/common_popup.js",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/templates/popup_template.html",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/static/js/popup/api_popup_c.js",
+		"/Users/e.balashov/Git/callcenter-server/.gitignore",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/static/js/popup/js_c.js",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/static/js/popup/mobile_js.js",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/static/js/popup/js_c_old.js",
+		"/Users/e.balashov/Git/callcenter-server/src/main/resources/callcenter.sublime-project",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/api_popup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/common_popup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/abstract/reset.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/js.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/readme.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/customScript.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/localization.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/smartreserve_popup.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/mobile_js.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/reserve_admin.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/js/js_c.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/js/js.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.common0.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.afisha.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/mobile.popup.afisha.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/blocks/preloader.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/restaurateur_api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/css/bootstrap-glyphicons.css",
+		"/Users/e.balashov/Git/rambler-library-master/server/node_modules/loopback-component-explorer/node_modules/lodash/package.json",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/pickmeup.styl",
+		"/Users/e.balashov/Desktop/50491",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/index.html",
+		"/private/var/folders/5r/d98q0kd97vgfhmp1zfmsr6p80000gp/T/WebContent_commonpopup_js_localization_Before_2b435863de0c33a9378768771f12afd4071188ea.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/map/points.json",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/blocks/_preloader.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/popup/js/common.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/js/mobile_js.js",
+		"/Users/e.balashov/Dropbox/work/!!!.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/partner_api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/popup/js/api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/mapeditor/js/api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/restaurateur_api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/partner_api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/reservation_module_api.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/css/popup.afisha.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/css/popup.common.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/img/bonus_gem.png",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/help-api/css/jsondoc.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/popup/js/jquery.custom-scrollbar.js",
+		"/Users/e.balashov/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/e.balashov/Git/javascript/README.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/js/smartreserve_popup.js",
+		"/Users/e.balashov/Desktop/smartreserve_popup.js",
+		"/Users/e.balashov/Dropbox/common/work.md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/jquery.table2excel.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/get_report.html",
+		"/Users/e.balashov/Downloads/jquery-table2excel-master/dist/jquery.table2excel.js",
+		"/Users/e.balashov/Downloads/jquery-table2excel-master/README.md",
+		"/Users/e.balashov/Downloads/jquery-table2excel-master/demo/index.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/binds.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/common/restaurateur.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/common/restaurateur.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/binds.js",
+		"/Users/e.balashov/Git/dot/package.json",
+		"/Users/e.balashov/Dropbox/_me/re-osx.md",
+		"/Users/e.balashov/Desktop/test.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/smartreserve_popup.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/popup/css/smartreserve_popup.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/.editorconfig",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/help2/index.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/help2/js/helpdesk.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/pickmeup.min.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/reservation.default.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.default.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.common.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/jquery.custom-scrollbar.styl",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/.sass-cache/2a744366cd87d8526b876a9c4f73e7aebc970bf5/popup.common.scssc",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.common0.css",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/popup.common.scss",
+		"/Applications/avocode",
+		"/Users/e.balashov/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/e.balashov/Dropbox/sublime.json",
+		"/Users/e.balashov/Dropbox/design/daysoftype/events (Aljona's conflicted copy 2016-06-10).md",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/reservation_module.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/microform.html",
+		"/Users/e.balashov/Git/todomvc/examples/angular-dart/web/main.dart.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/Chart.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/Chart.js",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/index_en.html",
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/index_mobile_en.html",
+		"/Users/e.balashov/Git/rambler-gulp-boilerplate/README.md",
+		"/Users/e.balashov/Git/todomvc/readme.md"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"",
+			"commonpopup",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			":",
+			"sans-",
+			"sans",
+			"commonpop",
+			"sans-",
+			"commonpop",
+			"sans-serif",
+			"font",
+			"продажа",
+			"Light Cafe",
+			"card_id",
+			"\"card_id\":",
+			"modification_date",
+			"openingHoursSpecification",
+			"www.wtest.af",
+			"url",
+			"potentialAction",
+			"waiting: ",
+			"receive",
+			"descr",
+			"0 20px 10px 20px",
+			"padding 0 20px 10px 20px",
+			"descr",
+			".descr",
+			"descr",
+			"You ",
+			"You will receive a secret code within a few minutes",
+			"//",
+			"///////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////",
+			"////////////////////////////////////////////////",
+			"///////////////////////////////////////////////",
+			"//////////////////////////////////////////////",
+			"/////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////////",
+			"/////////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////",
+			"///////////////////////////////////////////////////",
+			"//////////////////////////////////////////////////",
+			"////////////////////////////////////////////////////////////////",
+			"//",
+			"//W",
+			"//",
+			"initStepFinish",
+			"/ ?",
+			"?",
+			"// ?",
+			"123",
+			"38",
+			"1",
+			"1s",
+			"5",
+			"translate",
+			"40",
+			"extra_btn",
+			"load_circle",
+			"button",
+			"function() {",
+			"load_circle",
+			"phone_confirm",
+			"extra_btn",
+			"load_circle",
+			"wrap",
+			"extra_btn",
+			"#reserve",
+			"\"reserve",
+			"'reserve",
+			"reserve",
+			"id=\"reserve\"",
+			"Reserve",
+			"reserve",
+			"\"reserve",
+			"reserve",
+			"#reserve",
+			"load_circle",
+			"step4",
+			"#step4",
+			"UserConfirmed",
+			"initStepFinish",
+			"userConfirmed",
+			"UserConfirmed",
+			"userConfirmed",
+			"        $('.bar').hide();\n        $('#step2').hide();\n        $('#step3').hide();\n        $('#step4').show();\n\n        if (userAgent == 'mobile') {\n            $('.header .restaurant').removeAttr('id').html('');\n            $('.header .restaurant').addClass('opacity');\n        }\n\n        ga('send', 'event', 'ресторан', 'забронировать', 'подтверждение');\n\n        yaCounter27079337.reachGoal('RESERVE-confirm');\n\n        $('.footer input').hide();\n\n        window.location.hash = '#finish';\n        $('body').addClass('js-status-finished');",
+			"finish",
+			"step",
+			"toStep",
+			"toStep2",
+			"showCode",
+			"userConfirmed",
+			"createReservation",
+			"phone_confirmation",
+			"confirmButtonBind",
+			"userConfirmed",
+			"brea",
+			"initRetry",
+			"createReservation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 158.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cubeee.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rea",
+				"readme.md"
+			],
+			[
+				"reset",
+				"WebContent/commonpopup/css/reset.styl"
+			],
+			[
+				"bae",
+				"WebContent/commonpopup/css/base.styl"
+			],
+			[
+				"base",
+				"WebContent/commonpopup/css/base.styl"
+			],
+			[
+				"we",
+				"webpack.config.js"
+			],
+			[
+				"app.js",
+				"WebContent/commonpopup/js/app.js"
+			],
+			[
+				"read",
+				"readme.md"
+			],
+			[
+				"app.",
+				"WebContent/commonpopup/js/app.js"
+			],
+			[
+				"app",
+				"WebContent/commonpopup/js/app.js"
+			],
+			[
+				"js.coo",
+				"WebContent/commonpopup/js/vendor/js.cookie.js"
+			],
+			[
+				"web",
+				"webpack.config.js"
+			],
+			[
+				"inde",
+				"WebContent/index.html"
+			],
+			[
+				"pickstyl",
+				"WebContent/commonpopup/css/vendor/pickmeup.styl"
+			],
+			[
+				"main",
+				"WebContent/commonpopup/css/main.styl"
+			],
+			[
+				"reser",
+				"WebContent/popup/reservation.html"
+			],
+			[
+				"fastclick.js",
+				"WebContent/commonpopup/js/vendor/fastclick.js"
+			],
+			[
+				"jquery.inputmask.bundle.min.js",
+				"WebContent/common/js/jquery.inputmask.bundle.min.js"
+			],
+			[
+				"pickmeup.js",
+				"WebContent/common/js/pickmeup.js"
+			],
+			[
+				"jquery.selectric.min.js",
+				"WebContent/common/js/jquery.selectric.min.js"
+			],
+			[
+				"custom-s",
+				"WebContent/common/js/jquery.custom-scrollbar.js"
+			],
+			[
+				"jquery.ui.min.js",
+				"WebContent/common/js/jquery.ui.min.js"
+			],
+			[
+				"in",
+				"WebContent/index.html"
+			],
+			[
+				"html",
+				"src/main/resources/templates/popup_template.html"
+			],
+			[
+				"js.js",
+				"afishapopup/js/js.js"
+			],
+			[
+				"preloader",
+				"commonpopup/css/blocks/preloader.styl"
+			],
+			[
+				"commonpopupinde",
+				"commonpopup/index.html"
+			],
+			[
+				"commo",
+				"common/js/common_popup.js"
+			],
+			[
+				"typo",
+				"css/bootstrap-glyphicons.css"
+			],
+			[
+				"pre",
+				"commonpopup/css/blocks/preloader.styl"
+			],
+			[
+				"po",
+				"map/points.json"
+			],
+			[
+				"prel",
+				"commonpopup/css/blocks/preloader.styl"
+			],
+			[
+				"commonpopup/inde",
+				"commonpopup/index.html"
+			],
+			[
+				"common_",
+				"common/js/common_popup.js"
+			],
+			[
+				"apijs",
+				"admin/js/reservation_module_api.js"
+			],
+			[
+				"reade",
+				"readme.md"
+			],
+			[
+				"commonpopupindx",
+				"commonpopup/index.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"jsapi",
+				"admin2/js/restaurateur_api.js"
+			],
+			[
+				"commonpopupindex",
+				"commonpopup/index.html"
+			],
+			[
+				"commonpopup",
+				"commonpopup/js/common_popup.js"
+			],
+			[
+				"r",
+				"readme.md"
+			],
+			[
+				"re",
+				"readme.md"
+			],
+			[
+				"commonpoupapi",
+				"commonpopup/js/api_popup.js"
+			],
+			[
+				"",
+				"admin/js/restaurateur_api.js"
+			],
+			[
+				"api",
+				"admin2/js/partner_api.js"
+			],
+			[
+				"commonpopupin",
+				"commonpopup/index.html"
+			],
+			[
+				".styl",
+				"commonpopup/css/popup.common.styl"
+			],
+			[
+				"commonhtml",
+				"commonpopup/index.html"
+			],
+			[
+				"cusom",
+				"commonpopup/js/customScript.js"
+			],
+			[
+				"apipop",
+				"commonpopup/js/api_popup.js"
+			],
+			[
+				"commonindex",
+				"commonpopup/index.html"
+			],
+			[
+				"commoninde",
+				"commonpopup/index.html"
+			],
+			[
+				"common_popup",
+				"commonpopup/js/common_popup.js"
+			],
+			[
+				"commonpop",
+				"commonpopup/js/common_popup.js"
+			],
+			[
+				"bin",
+				"admin2/js/binds.js"
+			],
+			[
+				"bootjs",
+				"help-api/js/bootstrap.min.js"
+			],
+			[
+				"scss",
+				"admin/css/style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"s",
+				"~/Git/SmartReserveWebFrontEnd/SmartReserveWebFrontEnd.sublime-workspace"
+			],
+			[
+				"",
+				"~/Git/SmartReserveWebFrontEnd/SmartReserveWebFrontEnd.sublime-workspace"
+			],
+			[
+				"defa",
+				"~/Git/default/default.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
