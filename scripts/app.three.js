@@ -1,7 +1,6 @@
-
 function webglApp() {
 
-  "use strict";
+  'use strict';
 
   //// Переменные
   // Сцена
@@ -80,8 +79,8 @@ function webglApp() {
 
     // Куб
     cubeGeometry = new THREE.BoxGeometry(15, 15, 15);
-    texture = THREE.ImageUtils.loadTexture('../images/home/texture.jpg');
-    normalMap = THREE.ImageUtils.loadTexture('../images/home/normal.jpg');
+    texture = THREE.ImageUtils.loadTexture('images/texture.jpg');
+    normalMap = THREE.ImageUtils.loadTexture('images/normal.jpg');
     cubeMaterial = new THREE.MeshPhongMaterial({
       color: 0xc6e4ec,
       wireframe: false,
