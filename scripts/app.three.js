@@ -32,6 +32,7 @@ function webglApp() {
     rotationObject = document.getElementById('rotationObject'); // DOM
     rotationObject.appendChild(renderer.domElement);
 
+    renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1)
     renderer.setSize(sceneWidth, sceneHeight);
     scene = new THREE.Scene();
 
@@ -58,7 +59,7 @@ function webglApp() {
 
 
     // Камера
-    var cameraZoom = 10;
+    var cameraZoom = 15;
     camera = new THREE.OrthographicCamera(
       sceneWidth / - cameraZoom,
       sceneWidth / cameraZoom,

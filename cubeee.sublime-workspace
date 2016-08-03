@@ -120,9 +120,13 @@
 	"command_palette":
 	{
 		"height": 342.0,
-		"last_filter": "save",
+		"last_filter": "close",
 		"selected_items":
 		[
+			[
+				"close",
+				"Project: Close"
+			],
 			[
 				"save",
 				"Project: Save As"
@@ -218,10 +222,6 @@
 			[
 				"java",
 				"Set Syntax: JavaScript Next"
-			],
-			[
-				"close",
-				"Project: Close"
 			],
 			[
 				"bro",
