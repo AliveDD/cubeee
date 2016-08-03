@@ -24,4 +24,5 @@ body {
 // blocks
 .rotation-object {
   @include align(both);
+  // box-shadow: 0 0 4px 0 black;
 }
