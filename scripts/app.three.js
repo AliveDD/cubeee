@@ -85,15 +85,15 @@ function webglApp() {
     texture = THREE.ImageUtils.loadTexture('images/texture.jpg');
     normalMap = THREE.ImageUtils.loadTexture('images/normal.jpg');
     aoMap = THREE.ImageUtils.loadTexture('images/amb.png');
-    // displacementMap = THREE.ImageUtils.loadTexture('images/disp.png');
+    displacementMap = THREE.ImageUtils.loadTexture('images/disp.png');
     cubeMaterial = new THREE.MeshPhongMaterial({
       color: 0xd7b77c,
       wireframe: false,
       map: texture,
       normalMap: normalMap,
       aoMap: aoMap,
-      // displacementMap: displacementMap,
-      // displacementScale: 0,
+      displacementMap: displacementMap,
+      displacementScale: 0,
       shininess: 5,
       specular: 0xffffff,
       metal: true
