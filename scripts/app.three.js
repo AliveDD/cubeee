@@ -4,6 +4,7 @@ function webglApp() {
 
   //// Переменные
   // Сцена
+  var DPR = window.devicePixelRatio ? window.devicePixelRatio : 1
   var renderer, scene;
   var rotationObject; // DOM
   var sceneWidth = window.innerWidth / 3;
@@ -32,8 +33,9 @@ function webglApp() {
     rotationObject = document.getElementById('rotationObject'); // DOM
     rotationObject.appendChild(renderer.domElement);
 
-    renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1)
+    renderer.setPixelRatio(DPR);
     renderer.setSize(sceneWidth, sceneHeight);
+    // renderer.setViewport(0, 0, WsceneWidthW * DPR, sceneHeight * DPR);
     scene = new THREE.Scene();
 
 
