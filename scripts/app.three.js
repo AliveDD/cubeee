@@ -7,7 +7,7 @@ function webglApp() {
   var DPR = window.devicePixelRatio ? window.devicePixelRatio : 1
   var renderer, scene;
   var rotationObject; // DOM
-  var sceneWidth = window.innerWidth / 3;
+  var sceneWidth = window.innerWidth / 1.15;
   var sceneHeight = window.innerHeight / 2;
   // Освещение
   var light, spotLight;
