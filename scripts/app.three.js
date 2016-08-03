@@ -8,11 +8,11 @@ function webglApp() {
   var renderer, scene;
   var rotationObject; // DOM
   var sceneWidth = 200;
-  var sceneHeight = 200;
+  var sceneHeight = 400;
   // Освещение
   var light, spotLight;
-  var shadowMapWidth = 2048;
-  var shadowMapheigh = shadowMapWidth;
+  var shadowMapWidth = 1024;
+  var shadowMapHeight = shadowMapWidth;
   // Камера
   var camera;
 
@@ -42,14 +42,14 @@ function webglApp() {
 
     // Свет
     spotLight = new THREE.SpotLight(0xffffff);
-    spotLight.position.set(0, 70, 0); // поднимаем освещение над кубиком
-    spotLight.castShadow = true;
-    spotLight.shadowMapWidth = shadowMapWidth;
-    spotLight.shadowMapHeight = shadowMapheigh;
-    spotLight.shadowDarkness = 0.11;
+    spotLight.position.set(0, 150, 0); // поднимаем освещение над кубиком
+    // spotLight.castShadow = true;
+    // spotLight.shadowMapWidth = shadowMapWidth;
+    // spotLight.shadowMapHeight = shadowMapHeight;
+    // spotLight.shadowDarkness = 0.11;
     scene.add(spotLight);
 
-    light = new THREE.AmbientLight(0x303030);
+    light = new THREE.AmbientLight(0x595959);
     scene.add(light);
 
 
@@ -85,15 +85,15 @@ function webglApp() {
     texture = THREE.ImageUtils.loadTexture('images/texture.jpg');
     normalMap = THREE.ImageUtils.loadTexture('images/normal.jpg');
     aoMap = THREE.ImageUtils.loadTexture('images/amb.png');
-    displacementMap = THREE.ImageUtils.loadTexture('images/disp.png');
+    // displacementMap = THREE.ImageUtils.loadTexture('images/disp.png');
     cubeMaterial = new THREE.MeshPhongMaterial({
       color: 0xd7b77c,
       wireframe: false,
       map: texture,
       normalMap: normalMap,
       aoMap: aoMap,
-      displacementMap: displacementMap,
-      displacementScale: 0,
+      // displacementMap: displacementMap,
+      // displacementScale: 0,
       shininess: 5,
       specular: 0xffffff,
       metal: true
@@ -113,7 +113,7 @@ function webglApp() {
       color: 0x595959
     });
     plane = new THREE.Mesh(planeGeometry,planeMaterial);
-    plane.receiveShadow = true;
+    // plane.receiveShadow = true;
     plane.rotation.x=-0.5*Math.PI;
     plane.position.x = 0;
     plane.position.y = -15; // опустить горизонт ниже кубика
