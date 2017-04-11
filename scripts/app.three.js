@@ -34,8 +34,8 @@ function webglApp() {
     rotationObject.appendChild(renderer.domElement);
 
     renderer.setPixelRatio(DPR);
-    renderer.setSize(sceneWidth, sceneHeight);
-    // renderer.setViewport(0, 0, WsceneWidthW * DPR, sceneHeight * DPR);
+    renderer.setSize(sceneWidth * DPR, sceneHeight * DPR);
+    renderer.setViewport(0, 0, sceneWidth * DPR, sceneHeight * DPR);
     scene = new THREE.Scene();
 
 
@@ -43,13 +43,15 @@ function webglApp() {
     // Свет
     spotLight = new THREE.SpotLight(0xffffff);
     spotLight.position.set(0, 150, 0); // поднимаем освещение над кубиком
-    // spotLight.castShadow = true;
+    spotLight.castShadow = true;
+    spotLight.shadowDarkness = 0.5;
+    spotLight.shadowCameraVisible = true;
     // spotLight.shadowMapWidth = shadowMapWidth;
     // spotLight.shadowMapHeight = shadowMapHeight;
     // spotLight.shadowDarkness = 0.11;
     scene.add(spotLight);
 
-    light = new THREE.AmbientLight(0x595959);
+    light = new THREE.AmbientLight(0x264685);
     scene.add(light);
 
 
@@ -99,7 +101,8 @@ function webglApp() {
       metal: true
     });
     cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    // cube.castShadow = true;
+    cube.castShadow = true;
+    cube.receiveShadow = false;
     cube.position.y = 0;
     cube.position.z = 0;
     cube.position.z = 0;
@@ -113,7 +116,7 @@ function webglApp() {
       color: 0x595959
     });
     plane = new THREE.Mesh(planeGeometry,planeMaterial);
-    // plane.receiveShadow = true;
+    plane.receiveShadow = true;
     plane.rotation.x=-0.5*Math.PI;
     plane.position.x = 0;
     plane.position.y = -15; // опустить горизонт ниже кубика

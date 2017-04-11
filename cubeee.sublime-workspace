@@ -111,6 +111,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "scripts/app.three.js",
+			"settings":
+			{
+				"buffer_size": 3507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.htm",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 379,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -125,6 +149,14 @@
 		[
 			[
 				"close",
+				"Project: Close"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"clo",
 				"Project: Close"
 			],
 			[
@@ -146,10 +178,6 @@
 			[
 				"typo",
 				"Typograph text/file"
-			],
-			[
-				"edit",
-				"Project: Edit Project"
 			],
 			[
 				"sche",
@@ -189,10 +217,6 @@
 			],
 			[
 				"clos",
-				"Project: Close"
-			],
-			[
-				"clo",
 				"Project: Close"
 			],
 			[
@@ -325,10 +349,17 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/e.balashov/Git/cubeee"
+		"/Users/e.balashov/Git/cubeee",
+		"/Users/e.balashov/Git/cubeee/scripts",
+		"/Users/e.balashov/Git/cubeee/scripts/libraries",
+		"/Users/e.balashov/Git/cubeee/styles"
 	],
 	"file_history":
 	[
+		"/Users/e.balashov/Git/cubeee/cubeee.sublime-project",
+		"/Users/e.balashov/Downloads/heightmap-demos-gh-pages/scale.html",
+		"/Users/e.balashov/Git/cubeee/scripts/app.three.js",
+		"/Users/e.balashov/Git/cubeee/index.htm",
 		"/Users/e.balashov/Git/cubeee/README.md",
 		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/reset.styl",
 		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/css/vendor/selectric.styl",
@@ -452,15 +483,11 @@
 		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/commonpopup/microform.html",
 		"/Users/e.balashov/Git/todomvc/examples/angular-dart/web/main.dart.js",
 		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin2/js/Chart.js",
-		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/Chart.js",
-		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/index_en.html",
-		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/afishapopup/index_mobile_en.html",
-		"/Users/e.balashov/Git/rambler-gulp-boilerplate/README.md",
-		"/Users/e.balashov/Git/todomvc/readme.md"
+		"/Users/e.balashov/Git/SmartReserveWebFrontEnd/WebContent/admin/js/Chart.js"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -477,6 +504,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"spotLight",
+			"renderer.shadowMapEnabled = true;",
+			"shadowMapheigh",
+			"shadowMapHeight",
+			"shadowMapheigh",
+			"sha",
+			"shadowMapWidth",
+			"=",
+			"displacementMap",
+			"renderer.render",
+			"setViewport",
+			"window",
+			"setSize",
 			":",
 			"sans-",
 			"sans",
@@ -591,20 +631,7 @@
 			"userConfirmed",
 			"UserConfirmed",
 			"userConfirmed",
-			"        $('.bar').hide();\n        $('#step2').hide();\n        $('#step3').hide();\n        $('#step4').show();\n\n        if (userAgent == 'mobile') {\n            $('.header .restaurant').removeAttr('id').html('');\n            $('.header .restaurant').addClass('opacity');\n        }\n\n        ga('send', 'event', 'ресторан', 'забронировать', 'подтверждение');\n\n        yaCounter27079337.reachGoal('RESERVE-confirm');\n\n        $('.footer input').hide();\n\n        window.location.hash = '#finish';\n        $('body').addClass('js-status-finished');",
-			"finish",
-			"step",
-			"toStep",
-			"toStep2",
-			"showCode",
-			"userConfirmed",
-			"createReservation",
-			"phone_confirmation",
-			"confirmButtonBind",
-			"userConfirmed",
-			"brea",
-			"initRetry",
-			"createReservation"
+			"        $('.bar').hide();\n        $('#step2').hide();\n        $('#step3').hide();\n        $('#step4').show();\n\n        if (userAgent == 'mobile') {\n            $('.header .restaurant').removeAttr('id').html('');\n            $('.header .restaurant').addClass('opacity');\n        }\n\n        ga('send', 'event', 'ресторан', 'забронировать', 'подтверждение');\n\n        yaCounter27079337.reachGoal('RESERVE-confirm');\n\n        $('.footer input').hide();\n\n        window.location.hash = '#finish';\n        $('body').addClass('js-status-finished');"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -622,8 +649,101 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scripts/app.three.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1847,
+								1847
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
